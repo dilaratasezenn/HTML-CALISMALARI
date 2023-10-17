@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML ve formlar</title>
+  </head>
+  <form name="bilgi" id="bilgi" method="get" action="">
+    <!--bir kişinin bilgisini alıcağımız bir form oluşturduk -->
+    <!--form oluştururken isim verdik id verdik benzersiz kimlik ismi verdik ve method get vererek verdiğimiz bilgiler adres satırında çıkıcak ama host deseydik o bilgi gizli olucaktı action ile de bu bilgiler hangi sayfaya gidicekse onu belirliliyoruz-->
+    Adınız:<input type="text" id="ad" name="ad" /><!--formun adını belirledik-->
+    Adres:<textarea name="adres" id="adres" cols="50" rows="15"> </textarea
+    ><!--textarea ile metin kutusunu isrediğimiz gibi büyütebiliyoruz yada satır ve sütun aralığını belirleyerek de oluşturulabilir ayrıca metin editörünüde sitemize entegre edebilriz tabi bunun için javascript ve css ile oluşturulmuş bir editör olduğu için textarea kullanılmış olması gerekiyo ve name id olarak belirtilmeli-->
+    <input
+      type="submit"
+      name="gonder"
+      id="gonder"
+    /><!-- gönder butonu oluşturduk sumbit diyerek formu sayfanın adres kısmına gönderiyoruz eğer button dersek gönder dediğimizde bilgiler gitmicektir gitmesi için javascript kullanılmış olması gerekir eğer php yada .net kullanıyosak sumbit yazmamız gerekir-->
+  </form>
+  <body>
+    <form name="form1" id="form1" method="post">
+      Adınız:
+      <label for="textfield">:</label>
+      <input type="text" name="ad" id="ad" />
+      <label for="textarea">Adres:</label>
+      <textarea name="textarea" id="textarea"></textarea>
+      <input type="button" name="gonder" id="gonder2" value="Gönder"></input
+      ><!--value kısmına türkçe karakter yazılabilir ayrıca button genellikle javascript için kullanılır sumbit button genellikle sunucuya bilgi göndermek için kullanılır biz html css javascript ile sunucuya bilgi gönderemeyiz bu bilgiyi ancak php ile gödeririz ve oradada sunucu ile bu bilgileri işleriz-->
+    </form>
+  </body>
+</html>
