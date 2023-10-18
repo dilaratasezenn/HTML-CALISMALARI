@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tablolar</title>
+  </head>
+
+  <body>
+    <table width="150" border="1">
+      <tr>
+        <td colspan="3" style="text-align: center" bgcolor="blue sea">A</td>
+        <!--bgcolor diyerek satırın rengini verdik istersek tablonun tamamınada renk verebiliriz bunun için table a bgcolor yazmamız lazım-->
+        <!--satırları birleştirmek istediğimizde colspan kullanıyoruz td içinde eğer sütunları birleştirmek istersek rowspan kullanıyoruz-->
+        <!--table etiketi içinde tablo oluşturuyoruz tr etiketi içinde  satırlarımızı belirliyoruz-->
+        <!--<td>B</td>
+        <td>C</td> satırları birleştirğimiz için b ve cyi siliyoruz-->
+      </tr>
+      <tr>
+        <td rowspan="2">D</td>
+        <!--ben bu tabloda d ile g yi birlşetirmek istiyotum o zaman d içine rowspan yazıp gyi silmem gerek tanlonun düzeni bozulmaması için-->
+        <td rowspan="2">E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <!--<td>G</td>-->
+        <!--<td>H</td>-->
+        <td>J</td>
+      </tr>
+    </table>
+    <br /><br />
+    <table width="200" border="1">
+      <!--border ile tablonun çerçeve kalınlığını belirledik-->
+      <tbody>
+        <tr>
+          <td colspan="3" style="text-align: center">&nbsp;</td>
+          <!--üç satırı birleştirdik ve yazıyı style ile ortaladık-->
+          <!--&nbsp ile içi boş oldu üç satır ve üç sütun bir tanlo oluşturduk-->
+          <!--<td>&nbsp;</td>
+          <td>&nbsp;</td>-->
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
