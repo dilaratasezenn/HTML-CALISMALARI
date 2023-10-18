@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form kontrol</title>
+  </head>
+  <body>
+    <form action="" name="kisi bilgileri" id="kisi bilgileri" method="post">
+      <!--method kısmına get yazarak yada belirtmeden varsıyalan da get olarak kullanıldığı için yani varsayılan kullanıdığımızda bilgilerin hepsi sitenin adres kısmında belirir ama methoda post diye belirtirsek bilgiler sunucuya gönderilir ama sitenin adres kısmında gözükmez-->
+      Kullanıcı Adı:<input
+        type="text"
+        name="kullaniciad"
+        id="kullaniciad"
+        required
+        autofocus
+      /><br /><!--kullanıcı bu texti doldurmadan geçmemsini sağlamak için doldurulmasını zorunlu kılmak için required ekliyoruz autofocus dediğimizde bilgileri gönderdikten sonra imlecin kullanıcı adında yanıp sönmesini sitediğimiz için-->
+      Şifreniz:<input type="password" name="sifre" id="sifre" required /><br />
+      <!--şifre girdiğimiz -->
+      Telefon:<input
+        type="tel"
+        name="telefon"
+        id="telefon"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="560-790-1890"
+      /><br /><!--bu pattern özelliği ile girilen telefon numarasının bizim belirlediğimiz formatta girilmesini sağladık şöyle 0-9 arasında 3 karakter yine 0-9 arası 3 karakter ve yine 0-9 arası 4 karakter şeklinde ayrıce placeholder diyerek text içinde silik renkte bir örnek numara gösterimi sağladı-->
+      E-posta:<input
+        type="email"
+        name="eposta"
+        id="eposta"
+        required
+        placeholder="asd@asd.asd"
+      /><br />
+      Web Siteniz:<input
+        type="url"
+        name="webadres"
+        id="webadres"
+        required
+        placeholder="http://asd.asd"
+      />
+      <p>
+        <input type="submit" name="submit" id="submit" values="Gönder" />
+      </p>
+    </form>
+  </body>
+</html>
