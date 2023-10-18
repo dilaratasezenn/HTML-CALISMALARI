@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>formlar</title>
+  </head>
+  <body>
+    <form id="form1" name="form1" method="get">
+      Yaşınız:<input
+        style="width: 20%"
+        type="number"
+        name="yas"
+        id="yas"
+        min="15"
+        max="100"
+        placeholder="15-100"
+      /><br />
+      Resminizi Seçin:<input
+        type="file"
+        name="dosya"
+        id="dosya"
+      /><br /><!--htmlle internette dosyaları servera yüykleyemeyiz bunun için php veya .net gibi server bazlı programlama öğrenmemiz gerekiyo -->
+      <input type="submit" name="gonder" value="Gönder" />
+      <input type="reset" name="reset" id="reset" values="formu temizle" />
+    </form>
+  </body>
+</html>
