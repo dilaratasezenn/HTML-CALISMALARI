@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>formlar</title>
+  </head>
+  <body>
+    <form name="form1" id="form1" method="get">
+      Month:<input type="month" name="ay" id="ay" />
+      <br /><!--min max değerlerini girerek hanhi ay yıl arasında olmasını ayarlayabilriz aynı şekilde gün saat hafta içinde geçerli-->
+      Week:<input type="week" name="hafta" id="hafta" /><br />
+      Date:<input type="date" name="gun" id="gun" /><br />
+      Time:<input
+        type="time"
+        name="zaman"
+        id="zaman"
+        value="01:00"
+      /><br /><!--valuede sayfa açıldığında saat bilgisinde 01:00 şeklinde gözükmesinide sağlayabiliriz aynı şekilde diğerleri içinde-->
+      DateTime-Local:<input
+        type="datetime-local"
+        name="tarih"
+        id="tarih"
+      /><br /><!--datetime birçok tarayıcı desteklemiyo o yüzden datetime-local kullanıyoruz-->
+      <input type="submit" name="gonder" id="gonder" values="Gönder" />
+    </form>
+  </body>
+</html>
