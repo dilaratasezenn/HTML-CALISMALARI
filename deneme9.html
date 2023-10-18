@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<br>
+    <head>
+        <meta charset="utf-8">
+        <title>form radio ve checkbox</title>
+    </head>
+  <body>
+    <form action="" name="bilgiler" id="bilgiler" method="get">
+Cinsiyet:<br>
+    <input type="radio" name="cinsiyet" id="erkek" value="E">Erkek<br> <!-- name ikisinde de cinsiyet olarak belirttik eğer birine cinsi yazsak diğerine cinsiyet yazsak bu gruplandırmada her iki seçeneğide seçeriz o yüzden ikiside aynı name sahip olmalı erkek yada kadın diye seçenek belirttik erkek yazısını başa yazsaydık işaretlenme alanı sağda kalıcaktı sona yazdık ve işaretleme alanı solda kaldı işaretlemeyide input type tipini radio olarak seçtik -->
+    <input type="radio" name="cinsiyet" id="kadin" value="K">Kadın <br>
+
+    Medeni Durum:<br>
+    <input type="radio" name="medenidurum" id="evli" value="E">Evli<br> 
+    <input type="radio" name="medenidurum" id="bekar" value="B">Bekar <br>
+
+    Hobiler:<br>
+    <input type="checkbox" name="hobi" id="spor" value="1">Spor<br> <!--hobiler grubunda birden fazla seçenek seçmek için input tipine checkbox yazdık value 1 -2-3-4 dememizde 1 in spor olduğunu belirttik adres kısmında-->
+    <input type="checkbox" name="hobi" id="kitap" value="2">Kitap <br>
+    <input type="checkbox" name="hobi" id="gezi" value="3">Gezi<br> 
+    <input type="checkbox" name="hobi" id="müzik" value="4">Müzik <br>
+
+    <input type="submit" value="Gönder" id="gonder" name="gonder"><!--submit butonu bilgileri farklı bir sayfaya göndermek için kullanılır javascriptte genelde buttonu kullanıyoruz submit formlarda veya php asp.net bilgileri farklı sayfalara gönderizeksek submit kullanıyoruz -->
+</form>
+
+
+
+</body>
+</html>
