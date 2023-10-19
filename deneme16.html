@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>div yapısı</title>
+    <style type="text/css">
+      div#cerceve {
+        width: 100px;
+        height: 100px;
+        background: red;
+        padding: 30px;
+        margin: 30px;
+        border: 30px solid blue;
+      }
+    </style>
+    <!-- style içine yazdığımız text css açtığımız divleri biçimlendirmek için ayrıca style içinde seçtiğim cerceve ile cerceve nin width ve height divin sadece kullannılanilir alanını göstericek yani divin bütün kapladığı alanı göstermez 
+    padding ise iç boşluk değeri yani padding yazmasaydık yazı direk çerçevenin dibinde yazmaya başlardı padding ile bu çerçeveye iç boşluk vermiş olduk ayrıca padding iç boşluk verirken aslında dışa doğru büyür yazdığımız alan içte kalmış olur
+margin ise dış boşluk demek eğer margin yazmasaydık çerçeve sayfada en köşede kalıcaktı ama margin ile dış boluğu ayarladık ve sayfada en köşede değilde biraz daha ortalara doğru kaymış oluyo 
+border kenarlık değeri çerçevenin kenarlığının kalınlığını belirleriz yani çerçeveyi divi dışa doğru büyütür-->
+  </head>
+
+  <body>
+    <div id="cerceve" class="renkler"></div>
+    <!--div ile bir çerçeve oluşturduk ama bu oluturduğumuz çerçeveyi biçimlendirmek için head içinde style açarak text css diye belirttiğimiz alanın içinede biçimlendirmem gerek bunun için div içinde id ye cerceve olarak belirttiğim çerçeveyi css içinde seçmem için yani style içinde  başına div yazıp # bu işateti eklmem gerekli ama class için biçimlendirme yapıcaksam başına div. yazmalıyım ayrıca javascripte id üzerinden nesnelere erişebiliriz ve classı birden çok nesneye kullanabilriz ama id yi sadece bir nesneye kullanabilirz-->
+  </body>
+</html>
