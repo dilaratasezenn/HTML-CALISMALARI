@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <title>css ile div yapısı</title>
+    <link rel="stylesheet" href="css/divyapisi.css">
+    
+    <!--biz div yapısını css ile burada biçimlendirebiliriz ama css'i harici bir dosya olarak oluşturduğumuzda css dosyasını istediğimiz her dosya içerisine import ederek kullanabiliriz
+        css içierisinde belirttiğimiz #container{} şkelindeki aslında bir seçicidir ve biz biçimlendirmeyi bu seçiciyle birlikte{} bu parantezin içerinde biçimlendiririz renk büyüklük gibi şeyler ama bazen article gibi makale alanında bir tane makale olmaz bu yüzden article içine id değilde class tanımlarız çünkü birden fazla makale yazılabilir
+    width 960px vermemizin sebebi 1024 verebilirdik ama altta belki kaydırma çubuğu çıkar diye standartın bir tık altında çözünürlük yazıyoruz 
+margin sitemizin içene açtığımız contiener alanının dış boşluğunu ayarlamak içindi ve margin 4 farklı parametre alır önce üst boşluk daha sonra sağ boşluk sonra alt boşluk sonra sol boşluk şeklinde içine ilk üst boşluk "0"px olsun dedik ve sağdan soldan auto yazdık yani sayfayı otamatik ortalamsını istedik sonra alttan yine "0"px olsun dedik sonra soldan da yine auto yani otomatik olsun dedik yada direk margin o auto yazsakda yine üstte yazdığımız gibi olurdu-->
+  </head>
+  <body>
+    <div  id="container">
+      <header id="banner"></header>
+      <nav></nav>
+      <section>
+        <header id="makale"></header>
+        <article calss="makale"></article>
+        <footer id="makalesonu"></footer>
+      </section>
+      <aside></aside>
+      <footer id="sitesonu"></footer>
+    </div>
+  </body>
+</html>
