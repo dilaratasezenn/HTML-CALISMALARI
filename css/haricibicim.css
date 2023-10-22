@@ -1,7 +1,7 @@
 @charset "utf-8";
 div#container {
     width: 960px;
-    height: 600px;
+    height: 800px;
     background: #767272;
     margin: 0 auto 0 auto;
     padding-top: 10px;
@@ -14,8 +14,50 @@ div#container {
   }
   nav{
     width: 150px;
-    height: 550px;
+    height: 450px;
     margin: 10px;
     background:#704DFD ;
-
+float:left ;
   }
+  section{
+    width: 600px;
+    height: 450px;
+    margin: 10px;
+    background: #7D8AF0;
+    float: left;
+    padding-top: 10px;
+  }
+  aside{
+    width: 150px;
+    height: 450px;
+    margin: 10px;
+    background:#704DFD ;
+    float:left ;
+    
+  }
+  footer#sitesonu {
+    width: 940px;
+    height: 80px;
+    margin: 10px;
+    background: #17F90D;
+    float: left;
+  }
+  header#makale
+{
+  width:450px;
+  margin:0 auto;
+  height:50px;
+  background: #97E2F5;
+}
+article.makale{
+  width:450px ;
+  height: 200px;
+  background: #A21416;
+  margin: 10px auto;
+}
+footer#makalesonu{
+ width: 450px;
+ height: 100px;
+ background:#AAAD29; 
+margin: 10px auto;
+}
