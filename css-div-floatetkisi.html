@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>sayfa</title>
+    <style type="text/css">
+      div#kapsayici {
+        width: 900px;
+        background: rgba(197, 196, 196, 1);
+        margin: auto;
+      }
+      div#banner {
+        width: 880px;
+        background: rgba(255, 0, 4, 1);
+        height: 150px;
+        margin: 10px;
+      }
+      div.kutu {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        margin: 10px;
+        float: left;
+      }
+      div.temizle {
+        clear: both;
+      }
+      div.soltemizle {
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kapsayici">
+      <div id="banner"></div>
+      <div class="kutu"></div>
+      <!--alt alta 4 kutu oluştu bu kutuların yan yana gelmeleri için float değeri oluşturduk elemanları bu alan içinde yüzdürmeye yarar float left dediğmizde kutular sola doğru dizilir yani yüzer-->
+      <div class="kutu"></div>
+      <!--aynı zamanda id kullandığımızda css içinde div#banner deriz '#' bu işareti kullanılırız ama class için div.kutu deriz '.' bu nokta işaretini kullanarak belirtiriz-->
+      <div class="kutu"></div>
+      <div class="soltemizle"></div>
+      <!--bu divi oluşturmamızın sebebi üçüncü kutudan sonra 4. kutumuzun alttan devam etmesini istiyoruz ozaman üçüncü kutudan sonra div class soltemizle diyip clear left diyoruz -->
+      <div class="kutu"></div>
+      <div class="kutu"></div>
+      <div class="kutu"></div>
+      <div class="kutu"></div>
+      <div class="soltemizle"></div>
+      <div class="kutu"></div>
+      <div class="kutu"></div>
+      <div class="kutu"></div>
+      <div class="temizle"></div>
+      <!--temizle özelliği ile aslında bu özelliği kullanmadan önce kutular sola doğru dizilmişti ama arka plan yani kapsayıcı sadece bannerı içeriyodu bu yüzden ben kutularımın arka planına kadar uzanmasını istediğim için div ile yeni bir class açtım ve temizle dedim-->
+    </div>
+  </body>
+</html>
