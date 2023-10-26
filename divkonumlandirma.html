@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>sayfa</title>
+    <style type="text/css">
+      div#kapsayici {
+        width: 900px;
+        background: rgba(197, 196, 196, 1);
+        margin: auto;
+      }
+      div.kutu {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      } /*position için static dediğimiz zaman  kutular birbiri ardını takip ederek dizilir absolute dediğimiz zaman bütün divler birbirinden bağımsız hale gelir yani mavi kutu sol üst köşede kırmızı kutunun üstüne gelir*/
+      div#kutu1 {
+        background: red;
+        right: 0;
+        margin: 10px;
+        /*kutu bir için right değerini */
+      }
+      div#kutu2 {
+        background: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="kutu1" class="kutu"></div>
+    <div id="kutu2" class="kutu"></div>
+  </body>
+</html>
