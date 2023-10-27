@@ -8,6 +8,8 @@
         width: 900px;
         background: rgba(197, 196, 196, 1);
         margin: auto;
+        height: 600px;
+        position: relative;
       }
       div.kutu {
         width: 100px;
@@ -16,18 +18,82 @@
       } /*position için static dediğimiz zaman  kutular birbiri ardını takip ederek dizilir absolute dediğimiz zaman bütün divler birbirinden bağımsız hale gelir yani mavi kutu sol üst köşede kırmızı kutunun üstüne gelir*/
       div#kutu1 {
         background: red;
-        right: 0;
+        /* position: relative; /* position relative değeri static gibi kendinden önce gelen nesneye bağımlı hareket eder yani bağımlı olduğu nesneyi referans alır staticten tek farkı top ve left değerlerini alabilmesi */
+        position: fixed; /*fixed özelliği ile kırzmızı kutuyu belilrediğimiz konumda çakılı kalır ve biz sayfayı yukarı doğru hareket ettirdiğimiz de kutuda hareket eder istersek bu kutuya çarpı işareti koyarakda javascript ile gizleyebiliriz reklam gibi düşünürsek*/
+        /* position: absolute;*/
+        z-index: 2;
+        top: 300px;
+        left: 400px;
+        visibility: hidden; /*visibility görünürlük demek ve biz bu  kırmızı kutuyu bu özellik ile sayfada gizleyebilriz*/
+        /*right: 0;
         margin: 10px;
-        /*kutu bir için right değerini */
+        bottom: 100px;*/
+        /* bottom değerini 100px girerek kımrmızı kutu sağ köşeyi referans aldığı için sağ alt köşeden 100px yukarıda olucak şekilde hizalanıcak */
+        /*kutu bir için right değerini 0 girerek kırmızı kutunun sağ üst köşeden hizanlanmasını sağladık artık kırmızı kutu sağ üst köşeye göre konumlanıcak yani referans noktası sağ üst köşe*/
       }
       div#kutu2 {
         background: blue;
+        /*position: relative;*/
+        position: absolute;
+        right: 30px;
+        /* left: 30px; /*soldan 30px boşluk bırakarak aslında sağa 30px kaydı*/
+        /*top: -80px; /*mavi kutunun kırmızı kutunun üstüne çıkması isterserk top değerini -80px diyerek geriye yani kırmızının üstüne doğru yaklaşır ve kırmızının üstüne gelir*/
+        /* top: 80px;*/
+        top: 0;
+        z-index: 1; /*z-index kullanmadan önce mavi kutu kırmızı kutunun üstüne geliyodu z-index 1 diyerek kırmızı kutunun üste gelmesini sağladık ayrıca z-index 1 dedik ama iki kutu olduğu için iki sayı kullandık maviye 1 dedik kırmızı kutuyada z-index 2 dedik ve z-index yazmadan önceki halin tam tersini yani kırmızı kutunun üste gelmesini sağladık */
+        /*position: absolute;
+       /* top: 70px; /* tepe noktasından 70px alta kayıcak*/
+        /* left: 100px; /*sola 100px kayıcak*/
+      }
+      div#kutu3 {
+        background: green;
+        float: left;
+        margin: 100px 0;
+        position: sticky; /* sticky ile oluşturduğumuz kutunun yukarı doğru sayfayı kaydırdıkça kutuda aşağı doğru kayıcak ama referans noktası belirlediğimiz konum olucak */
+        top: 10px;
+        overflow: hidden; /*bu özellik ile kutunun içine yazdığımız yazılar taşmıştı bu özellik ile taşan yazıları gizledik bu yazı neden taşıyo dersek çünkü bu kutunun belirlediğimiz bir margin değeri var bu yüzden sabit bir şekilde olduğundan yazılar dışarı taşar ama overflow özelliği ile gizleyebiliriz*/
       }
     </style>
   </head>
 
   <body>
-    <div id="kutu1" class="kutu"></div>
-    <div id="kutu2" class="kutu"></div>
+    <div id="kapsayici">
+      <div id="kutu1" class="kutu">
+        <p>logo</p>
+      </div>
+      <div id="kutu2" class="kutu">
+        <p>menüler</p>
+        <p>menüler2</p>
+      </div>
+      <div id="kutu3" class="kutu">
+        sdag asgf sagf asgf sdfgsarh dfhs asg asgf asga asfha shfa srha shf weg
+        asg asrh asrha sdfgsarhh
+        <p>dsfh</p>
+        <p>dsfg</p>
+        <p>dsfg</p>
+        <p>asf</p>
+        <p>asdg</p>
+        <p>adfs</p>
+        <p>adfg</p>
+        <p>adfg</p>
+        <p>adfg</p>
+        <p>adgf</p>
+        <p>adfg</p>
+        <p>adfg</p>
+        <p>adfsb</p>
+        <p>sdfg</p>
+        <p>adfbg</p>
+        <p>zdfg</p>
+        <p>adfgb</p>
+        <p>dfbg</p>
+        <p>dafg</p>
+        <p>adfg</p>
+        <p>adfh</p>
+        <p>dfag</p>
+        <p>fdh</p>
+        <p>adfh</p>
+        <p>dshfj</p>
+      </div>
+    </div>
   </body>
 </html>
