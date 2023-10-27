@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sayfa</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      div.kapsayici {
+        width: 800px;
+        height: 250px;
+        background: blue;
+        /*margin-left: 150px;*/
+        /*margin: 0 auto;*/
+        position: relative;
+        /*position: absolute;*/
+      }
+      div.kutu {
+        width: 180px;
+        height: 150px;
+        margin: 10px;
+        background: yellow;
+        float: left;
+      }
+      .abskutu {
+        /*biz buna float left demediğim için kendini sol üst köşede hizaladı ama biz bunun ortalarda olmasını istersek top ve left değerleri olmalı ama biz bunun top left değerlerini kullnabilmem için position özellğinin absolute relative sticky fixed değerlerini girmem lazım*/
+        width: 150px;
+        height: 50px;
+        background-color: gray;
+        top: 100px;
+        left: 300px; /*top ve left değerlerini 100 300 girerek abskutusu kapsayicin orta kısmına biyere geldi ama kapsayici içinde position değerini absolute yazarsak bu abskutusunun yeri değişmez ama kapsayici tarayicinin sol üst köşesine gelir peki bu esnada top left değerlerini 0 yazarsak brişey farketmicek kutumuz yine kapsayicinin sol üst köşesinde kalıcak*/
+        position: absolute; /*absolute değeri kendini tarayıcının üst sol köşesine göre konumlandırmasını sağlar ve herşeyden bağımsız olmasını sağlar top ve left değerini 0 yaparsak sol üst köşede kendini başlangıç konumu olarak hizaladığını görürüz ama kapsayiciya position özelliği ile relative yazarsak bizim abskutumuz artık kendini tarayının üst sol köşesini değil kapsayicinin sol üst köşesine hizalicak*/
+      }
+      div.container {
+        width: 820px;
+        height: 350px;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kapsayici">
+        <!-- altta da bir tane daha kapsayici kullandık sorun olmaz çünkü class olarak tanımladık bu iiki kapsayiciyi container içine aldık ve çalıştırdığımızda bir tane kapsayici gözüktü çünkü üst üste geldiler sebebi kapsayiciyi absolute olarak tanımlamamızdan kaynaklı bu yüzden kapsayiciye position içinde relative özelliğini giriyoruz ve kapsayicilerin üst üste çıkmasını engelledik alt alta geldiler-->
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="abskutu"></div>
+      </div>
+      <div class="kapsayici">
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="kutu"></div>
+        <div class="abskutu"></div>
+      </div>
+    </div>
+  </body>
+</html>
