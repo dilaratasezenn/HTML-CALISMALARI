@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sayfa</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      /* div#container {
+        width: 650px;
+        height: auto;
+        margin: 0 auto;
+        border: solid 1px #ddd;} /*çerçeve verdik ve çerçeve genişliğini ve rengini belirledik*/
+      /* background-image: url(resimler/ev.png); /*seçtiğim resii yatay ve dikeyde çoğaltarak yerleştirdi resim küçük olduğundan*/
+      /* background-repeat: no-repeat; /*resimin ne kadar ve nasıl tekrarlanmasını istediğmizi ayarlicaz backrground-repeat ile bu özelliğin içine repeat-x yazarsak yatay eksende kendini tekrarlar repeat-y dersek kendini dikey eksende tekrarlar eğer no-repeat dersek kendini tekrarlamaz*/
+      /*background-position: 150px 70px; /*bacground-position ile arkaplan resminin nereye hizanlanması gerektiğini seçebililriz bu özelliğe left yazarsak sola hizalicak ama sol alta hizalanmasını istersek bottom left yazmamız gerekir gibi farklı şekillerde hizalayabiliriz yüzde veya px olarak da hizalayabiliriz şöyle ilk değer x yani yatay ikinci değer y yani dikey olacak şekilde soldan 20% üstten 50% boşluk bırakarak resmimizi hizaladık yada 150px soldan 70px üstten olacak şekilde hizaladık eğer fixed yerine scroll özelliğini yazarsak ilk yaptığımızdan cover dan bir farkı kalmicaktır*/
+
+      /*  background: url(resimler/ev.png) no-repeat fixed top; /*background özelliklerini üstteki gibi ayrı ayrıda yazabiliriz yada bu satırdaki gibi bir defa background yazıp da sırasıyla özelliklerini ekleyebiliriz*/
+      div#container {
+        width: 100%;
+        height: 100vh; /* sadece ekranda görünen beyaz alanaı kaplaması için 100vh diyoruz*/
+        margin: 0 auto;
+        border: solid 1px #ddd;
+        background: url(resimler/istockphoto-517188688-612x612.jpeg) no-repeat
+          top;
+        background-size: cover;
+        background-attachment: fixed; /*bu özellik il sayfayı kaydırdığımda resim harket etmicektir */
+      }
+
+      div#container2 {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        border: solid 1px #ddd;
+        background: url(resimler/13dbcc2101d2793cf9646c06da05b8b1.jpeg)
+          no-repeat top;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      div#container3 {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        border: solid 1px #ddd;
+        background: url(resimler/13dbcc2101d2793cf9646c06da05b8b1.jpeg)
+          no-repeat top;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+      } /*üç contianer ile üç resim seçtik ama sayfanın kenarlarında resim arasında biraz boşluk vardı bunun için style içinde body etiketi ile margin ve padding değerlerini 0 yaptık*/
+      /*body {
+        background-image: url(resimler/istockphoto-517188688-612x612.jpeg); /*style type css içinde body kullanarak sayfanın zemin resmini seçtik */
+      /* background-size: cover; /*resim büyük olduğu için tamamını sayfaya sığrdıramadı bu yüzdende background-size özelliği ile cover diğerek sayfada resmin tamamı gözükücek şekilde sığdırdı*/
+      /* background-attachment: fixed;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>RESİM BİR</h2>
+    </div>
+    <div id="container2">
+      <h2>RESİM İKİ</h2>
+    </div>
+    <div id="container3">
+      <h2>RESİM ÜÇ</h2>
+    </div>
+    <!--<p>a</p>
+      <p>asd</p>
+      <p>fgdh</p>
+      <p>xcgb</p>
+      <p>axccb</p>
+      <p>axcbvb</p>
+      <p>axcbvn</p>
+      <p>agnngn</p>
+      <p>agfng</p>
+      <p>agfnsfg</p>
+      <p>afgns</p>
+      <p>afngs</p>
+      <p>asfgn</p>
+      <p>anfs</p>
+      <p>asfgn</p>
+      <p>afgsng</p>
+      <p>agxcn</p>
+      <p>axgnnh</p>
+      <p>axnff</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>-->
+
+    <!--biz burada sayfa içine yazılar fazlasıyla ve sayfanın aşşağıya doğru uzandığında bizim arka plan için ayarladığımız resim yakınlaştı oysa cover özelliği ile sizeni ayarlamıştık ama cover böyle durumlarda resmi yakınlaştırıbiliyo ama resmi bu gibi durumlarda yakınlaştırıyove sayfayı aşşağı çektiğimizde resimde harket ediyo ayrıca cover özelliğini kapatırsak resim tekrarlar bunun içinde cover özelliğini kullandığımızda altına background-attachment özelliği ile fixed dediğimizde arka plan resmi sabit kalır özelliğini korur ve sadece sayfa içindeki çerçeve içi aşşğaı doğru hareket eder çünkü varsayılan özelliği olarak scroll gelir-->
+  </body>
+</html>
