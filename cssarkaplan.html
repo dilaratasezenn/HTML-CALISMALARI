@@ -8,7 +8,30 @@
         width: 650px;
         height: 500px;
         margin: 0 auto;
-        background: ;
+        background: linear-gradient(
+          45deg,
+          yellow 0%,
+          red 50%,
+          blue 100%
+        ); /*linear gradient iki renk arası yumuşak bir geçiş yapar yukarıdan aşağıya doğru şeklinde ama to right yazdığımız zaman soldan sağa doğru yumuşak bir geçiş yapar veya to top right dediğimiz zaman üst sağdan aşşağı sola doğru bir renk geçiş yapar yani çapraz şekilde yada to bottom left dediğimizde üst sağdan aşşağı sola doğru çapraz şekilde turunculaşıcak ayrıca üçüncü bir renk olarak blue eklediğimizde üç rengin yumuşak geçişini ayarlicak yada renk geçişlerinin yönlerini bu şekilde yazmak zorundada değiliz bununyerine derece olarakda belirleyebiliriz derece olarak ifade ederken sağ taraf 0 derece alt taraf 90 sol taraf 180 üst taraf 270 derece olarak karşımıza gelir örnek olarak to bottom left yerine 45deg yazdık 45 derece açıyla renk geçişini bize göstericektir hemde bu renklerin durak notalarını ayarlayabiliriz px olarak yada % değer şeklinde girilebilir yellow için 0% yani başlangıç noktası olsun sıfırda başlasın red 50% de başlasın yani tam ortada olur  blue 100% dersek bitiş noktasına da mavi renk gelir şeffaflık olsun istersek rgb komutunu kullanırız yada codzilla sayfasından istediğimiz renk tonlamarını ayarlayıp renk kodlarını buraya ekleyebiliriz*/
+        /*background: -o-linear-gradient(
+          yellow,
+          red
+        ); /*css3 deteklenmediği duruma o eki kullanılır opera tarayıcıları tarafından kullanılır*/
+        /*background: -webkit-linear-gradient(
+          yellow,
+          red
+        ); /*başına webkit yazılmasının amacı linear gradient eğer css3 uyumluluk sorununu gidermek için  webkit ile chrome ve safari için yazılır */
+
+        /*background: -moz-linear-gradient(
+          yellow,
+          red
+        ); /*css3 desteklenmediği durumda moz eki kulanılır yani firefox için kullanılır*/
+
+        /*background: -ms-linear-gradient(
+          yellow,
+          red
+        ); /*css3 desteklenmediği durumda ms eki yani microsoft tarayıcları tarafından çalıştırılabilmesi için kullanılır*/
       }
     </style>
   </head>
