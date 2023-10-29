@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sayfa</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      div.kutu {
+        width: 150px;
+        height: 150px;
+        background: blue;
+        margin: 5px;
+        display: inline-block; /*display sadece inline dersek sayfada kutular gözükmez çünkü inline özelliği kendi içinde boyutunu ayarlar width height desek bile yinede inline kendi içeriğine göre ayarlar bunun yerine inline-blok diyoruz inline blok yan yana kutuları dizer yada float left özelliği kullnılabilir*/
+        text-align: center; /*kutunun içinde yazılan yazının ortalanması için text-align center deriz*/
+        vertical-align: middle; /*vertical-align özelliği tablo içindeki verileri dikeyde hizalamaya yarar*/
+      }
+      td {
+        vertical-align: bottom;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kutu">dfgshfj</div>
+
+    <div class="kutu"></div>
+    <table width="233">
+      <tr>
+        <td height="150">bilişim</td>
+      </tr>
+    </table>
+  </body>
+</html>
