@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sayfa</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div.container {
+        width: 100%;
+        height: 100vh;
+        background: url(resimler/manzara.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+      }
+      h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      hr {
+        margin-bottom: 20px;
+      }
+
+      .orta {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 500px;
+        transform: translate(-50%);
+      }
+
+      div.orta p {
+        line-height: 30px;/*sayfada p tagı içinde yazdığımız yazı iki satır halindeydi istersek bu satır aralığını line- h*/
+        text-align: left;
+text-indent: 20px;  
+    }
+
+      h2 {
+        color:aliceblue;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;/*h2 ye sayfa başlığını yazmıştık istersek bu yazı başlığını h2 içinde yazı tipini rengini yazı boyutunu yazabiliriz*/
+     font-size: 30px;/*yazı büyüklüğünü 28px yazdık*/
+     font-weight:100 ;/*yazdığımız başlığın yazının inceliğini ayarladık 100 olarak girdik istersek 500 yazıp daha kalın yazmasını sağlayabiliriz */
+   font-style: italic;/*istersek font style ile yazının italik yazılmasını sağlayabiliriz*/
+/*text-decoration: underline;/*underline etiketi ile başlığın üstüne çizgi çektik istersek line-through ile yazının direk üstü çizili yazmasını isteyebiliriz yada overline ile yazının üstüne çizgi yapabiliriz */
+text-align:center ;   /*center ile balığı ortalarız istersek left ile sola right ile sağa hizalayabiliriz yada justify ile iki yana hizalanmasını sağlarız*/
+letter-spacing: 3px;/*bu özellik ile karakterler arası 5px boşluk bırakabiliriz bu harflerin arasında 5px olucak şekilde olur*/
+word-spacing: 10px;/*bu kelimeler arasında 10px boşluk bırakır*/
+text-shadow: 10px 10px 7px gray;/*bu başlığımıza gölgelendirme yapmamızı sağlıyo ilk yazdığımız 10px yazının gölgesinin yatayda ne kadar kayıcanı belirtiyo ikinci yazdığımız 10px*/
+text-transform: capitalize;/*bu özellik ile capitalize dediğimiz zaman kelimelerin ilk harflerini büyük harf yapar yada uppercase ile kelimenin bütün harflerinin büyük yazmasını sağlyabilririz yada uppercase ile kelimenin bütün harflerini küçük yazabiliriz */
+
+
+/*vertical-align: middle;/*bu özellik ile yazımızın ortlanmasını sağlardık ama div için display table özelliği vermemiz gerekirdi çünkü tabloda görünmesini sağlayan bir özellik o yüzden kullanmadık*/
+/*direction: rtl;/*bu özelliğide kullanmadık çünkü bu özellik ile yazıların soldan değilde sağdan yazmasını sağlıyo örenk arapçada mesela böyledir ama bu özelliği şuan bu sayfada kullanamıyoruz yukardan aşşağı ne kadar kayıcanı 10px olarak belirtiyoruz üçüncü yazdığımız px değeri ise gölgenin bulanıklık derecesi 2px yazsak daha belirgin bir gölge oluştururuz 5px yazsak daha bulanık bir gölge olur istediğimiz gibi bir değer verebiliriz*/
+}
+
+      hr {
+        color: gray;
+        background: #ff0004;
+        height: 1px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="orta">
+      <h2>Giriş paragrafı</h2>
+      <hr />
+      <p>
+        Paragrafın anlatmak istediğini, konusunu belirten cümledir. 1-2 cümleyi
+        geçmez ve paragrafın başında yer alır.
+      </p>
+  </body>
+</html>
