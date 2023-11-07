@@ -1,0 +1,57 @@
+nav{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style: none;/*cssyataymenu deki sayfamızda yazdığımız nav içindeki ul etiketinin içine yazdığımız menülerin anasayfa hakkımızda yazdığımız kısmın list style ile başındaki noktaları kaldırdık bu noktalar varsayılan olarak geliyo*/
+padding: 0;/*margin padding değerlerini sıfırladık çünkü bu menüleri tamamen sola hizalayarak yatay menü oluşturmaya çalışıyoruz*/
+}
+nav ul li{
+    display: block;/*her bir li içine yazdığımız menüleri bir kutucukmuş gibi belirlemesini sağladık*/
+    float: left;/*bu li etiketinde isimlerini belirlediğimiz menülerin yatay halde sıralanmasını sağladık*/
+}
+nav ul li a{
+    display: block;/*ul etiketi içinde menülerin ismini belirlemiştik ve bunları bir blok haline getirdik*/
+    padding: 20px 10px;/*bu yazdığımız menülerin içindeki yazıların arasındaki boşlukları ve kutucukların içindeki yerini ortaladık 20px ve 10px olarak*/
+    background:black;/*oluşturduğumuz menünün rengini siyah verdik*/
+    color: aliceblue;/*menü içinde yazdığımız yazıları rengini girdik*/
+    text-decoration: none;/*ilk oşuşturduğumuzda yazıların altında varsayılan olarak altı çizili gelmişti none diyerek kaldırdık*/
+    font-family: Arial, Helvetica, sans-serif;/*yazı tipini girdik*/
+    font-size: 10px;/*yazı büyüklüğünü 15px yazdık*/
+width: 150px;
+text-align: center;/*menü içindeki yazıları ortaladık ama dersler menüsünün alt menüleri olduğu için bu menülerin içindeki yazılarda ortalandı */
+}
+nav ul li a:hover{/*nav etiketi içinde ul listesindeki li etiketlerinin a:hower diyip fare ile üzerine geldiğinde hangi renk vermesini istiyosak onu yazabiliriz yazının hangi renge geçmesini istiyosak vs.*/
+    background: gray;
+    color:tomato ;
+    transition-duration: 0.5s;
+
+}
+nav ul li ul{/*nav etiketi içinde ul listesinin içindeki li etiketindeki ul nin fare ile üzrine gelmediğim zamanlarda gizli kalmasını sağlar*/
+    display: none;
+    position: absolute;/*dersler menüsüne gelince altda farklı menüler gözüküyodu ama bu esnada dersler menüsü üstüne geldiğinde genişliyodu bu yüzden position ile absolute dediğimiz zaman dersler menüsünün üstünde gelince menüde genişlenme olmuyo yani dersler menüsü sabit şekilde altında diğer menüler listeleniyo */
+width: 150px;
+
+}
+nav ul li:hover ul{/*nav etiketi içinde ul listesinin li etiketinin içindeki ul listesinin fare ile üzerine geldiğimde liste halinde alt yani display ile blok halinde gözükmesini sağladık*/
+    display: block;
+}
+nav ul li ul li{
+    display: block;
+    width: 150px;
+}
+nav ul li ul li a{
+    display: block;
+    width:150px;/*burada dersler menüsünün alt menülerinin kutucuk genişliğini ve blok halinde olmasını ayarladık*/
+text-align: left;/*üstte menülerin içindeki yazıların ortalanması için text-align center demiştik ama dersler menüsünün altındaki menüleri de baz almıştı onun için alt menünün içindeki yazıların sola hizalanması için burayada text-align left yazdık*/
+}
+/*.solust{
+    border-top-left-radius: 15px;}/*bunun amacı anasayfa yazan kısmın yani yatay blok halindeki en sol üst köşenin oval halde görünmesini sağladık normalde uzunca bir dikdörtgen gibi kenarları sivri haldedir*/
+.sol{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}/*burada yatay blok halindeki menünün ansayfa kısmındaki hem sol üst köşesini hemde sol alt köşesini ovalleştirdik*/
+.sag{
+    border-top-right-radius: 15px;/*bu ovalleştirme özelliğini istersek ms mos webkit oo gibi tarayıcaların hepsinde çalışması için bu ekleri ekleyebiliriz*/
+    border-bottom-right-radius: 15px;
+}/*burada yatay blok halindeki menünün sağ tarafındaki hem alt hem üst köşelerini ovalleştirdik */
