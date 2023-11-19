@@ -8,7 +8,8 @@ padding: 0;/*margin padding değerlerini sıfırladık çünkü bu menüleri tam
 }
 nav ul li{
     display: block;/*her bir li içine yazdığımız menüleri bir kutucukmuş gibi belirlemesini sağladık*/
-    float: left;/*bu li etiketinde isimlerini belirlediğimiz menülerin yatay halde sıralanmasını sağladık*/
+   /* float: left;/*bu li etiketinde isimlerini belirlediğimiz menülerin yatay halde sıralanmasını sağladık ama burada dikey menü oluşturmak istersek float left özelliğini kaldırmamız gerekli ama bu sadece bu özelliği kaldırdığımızda evet dikey halde menülerimiz gözükücek ama fareyi boşluk alanda yani menünün üstünde değilde boşluk alanda fareyi derslerin hizasına gelince dersler menüsünün alt menüleri gözükcek bunun için li etiketimizin sabit genişlik değerini yani width değerini 150px yazmamız lazım*/
+width: 150px;/*burada ikey menü için sabit genişlik değerini girdik ama dersler menüsünün üstüne gelince alt menüleri açıldığında diğer ana menüler gözükmüyo bunun için dersler mneüsünün alt münelirini yazdığımız li etiketine positon ve margin değerini atyarlamamız gerek*/
 }
 nav ul li a{
     display: block;/*ul etiketi içinde menülerin ismini belirlemiştik ve bunları bir blok haline getirdik*/
@@ -31,6 +32,7 @@ nav ul li ul{/*nav etiketi içinde ul listesinin içindeki li etiketindeki ul ni
     display: none;
     position: absolute;/*dersler menüsüne gelince altda farklı menüler gözüküyodu ama bu esnada dersler menüsü üstüne geldiğinde genişliyodu bu yüzden position ile absolute dediğimiz zaman dersler menüsünün üstünde gelince menüde genişlenme olmuyo yani dersler menüsü sabit şekilde altında diğer menüler listeleniyo */
 width: 150px;
+margin: -50 180px;
 
 }
 nav ul li:hover ul{/*nav etiketi içinde ul listesinin li etiketinin içindeki ul listesinin fare ile üzerine geldiğimde liste halinde alt yani display ile blok halinde gözükmesini sağladık*/
@@ -47,11 +49,11 @@ text-align: left;/*üstte menülerin içindeki yazıların ortalanması için te
 }
 /*.solust{
     border-top-left-radius: 15px;}/*bunun amacı anasayfa yazan kısmın yani yatay blok halindeki en sol üst köşenin oval halde görünmesini sağladık normalde uzunca bir dikdörtgen gibi kenarları sivri haldedir*/
-.sol{
+/*.sol{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }/*burada yatay blok halindeki menünün ansayfa kısmındaki hem sol üst köşesini hemde sol alt köşesini ovalleştirdik*/
-.sag{
+/*.sag{
     border-top-right-radius: 15px;/*bu ovalleştirme özelliğini istersek ms mos webkit oo gibi tarayıcaların hepsinde çalışması için bu ekleri ekleyebiliriz*/
-    border-bottom-right-radius: 15px;
+   /* border-bottom-right-radius: 15px;
 }/*burada yatay blok halindeki menünün sağ tarafındaki hem alt hem üst köşelerini ovalleştirdik */
